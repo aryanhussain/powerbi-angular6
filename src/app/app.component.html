@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" style="height:600px" >
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <ngx-powerbi-component type="report" 
+                       id="{{embedConfiguration.id}}"
+                       embedUrl="{{embedConfiguration.embedUrl}}"
+                       tokenType="Embed"
+                       accessToken="{{embedConfiguration.accessToken}}"
+                       on-embedded="onEmbedded($event)">
+</ngx-powerbi-component>
+</div>
+
+
